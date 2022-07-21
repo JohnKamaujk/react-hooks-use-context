@@ -3,6 +3,7 @@ import { ThemeContext } from "../context/theme";
 
 function DarkModeToggle() {
   const { theme, setTheme } = useContext(ThemeContext);
+
   function handleToggleTheme(e) {
     setTheme(e.target.checked ? "dark" : "light");
   }
